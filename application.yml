@@ -13,3 +13,9 @@ spring:
     application:
         name: microservicecloud-config-hxr-test
 #必须要保存为UTF-8格式，否则会因为乱码报错
+
+#提交指令：
+#git status     可以查看发生变化的文件
+#git add .      将文件加入到待提交中
+#git commit -m "init file"  将待提交中的文件上传到本地库并附上备注
+#git push origin master     将本地库中master主干中的文件推到github上
