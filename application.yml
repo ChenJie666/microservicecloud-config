@@ -1,21 +1,24 @@
 spring:
-    profile:
+    profiles:
         active:
         - dev
----
+--- 
 spring:
     profiles: dev #开发环境
     application:
         name: microservicecloud-config-hxr-dev
----
+--- 
 spring:
-    profile: test #测试环境
+    profiles: test #测试环境
     application:
         name: microservicecloud-config-hxr-test
 #必须要保存为UTF-8格式，否则会因为乱码报错
 
 #提交指令：
 #git status     可以查看发生变化的文件
-#git add .      将文件加入到待提交中
-#git commit -m "init file"  将待提交中的文件上传到本地库并附上备注
+#git add .      将改变的文件加入到暂存区中（不包括删除操作）
+#git commit -m "init file"  将暂存区中的文件上传到本地库并附上备注
 #git push origin master     将本地库中master主干中的文件推到github上
+
+#git add -u     提交被修改和被删除的文件，不包含新文件
+#git add -A     提交所有变化
