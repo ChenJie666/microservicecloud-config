@@ -1,0 +1,38 @@
+spring:
+    profiles:
+        active:
+        - dev
+
+---
+
+spring:
+    profiles: dev
+
+server:
+  port: 7001
+
+eureka:
+  instance:
+    hostname: eureka1.com #需要在hosts文件中添加映射
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://eureka2.com:7002/eureka/,http://eureka3.com:7003/eureka/
+      
+---
+
+spring:
+    profiles: test
+
+server:
+  port: 7001
+
+eureka:
+  instance:
+    hostname: eureka1.com #需要在hosts文件中添加映射
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://eureka2.com:7002/eureka/,http://eureka3.com:7003/eureka/
