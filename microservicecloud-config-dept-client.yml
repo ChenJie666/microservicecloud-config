@@ -15,7 +15,7 @@ mybatis:
 spring:
   profiles: dev
   application:
-    name: microservicecloud-config-dept-client  # 对外暴露的微服务名字
+    name: microservicecloud-dept  # 对外暴露的微服务名字
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource  # 当前数据库操作类型
     driver-class-name: org.gjt.mm.mysql.Driver  # mysql驱动包
@@ -61,7 +61,7 @@ mybatis:
 spring:
   profiles: test
   application:
-    name: microservicecloud-config-dept-client  # 对外暴露的微服务名字
+    name: microservicecloud-dept  # 对外暴露的微服务名字
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource  # 当前数据库操作类型
     driver-class-name: org.gjt.mm.mysql.Driver  # mysql驱动包
